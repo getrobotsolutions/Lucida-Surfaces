@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+    
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+<main>
+  <header onclick="">
+    <div class="config" onclick="FC_ContentsCall('Config')">
+        <img src="assets/config.png" height="50">
+    </div>
+  
+    <div class="logo">
+      <img src="" onclick="FC_ContentsCall('')">
+    </div>
+     <div class="col-sm-4 header-navbox" style=""  onclick="FC_ContentsCall('Dance')">
+        <div style=""></div>
+      </div>
+
+      <div class="col-sm-4 header-navbox" style="" onclick="FC_ContentsCall('Selfie')">
+        <div style=""> </div>
+      </div>
+
+      <div class="col-sm-4 header-navbox" style="" onclick="FC_ContentsCall('Avatar')">
+        <div style=""></div>
+      </div>
+  </header>
+  <nav></nav>
+  <section class="main-content">
+    <div class="navigation">
+
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product1')">
+        <div style=""></div>
+      </div>
+      
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product2')">
+        <div style=""></div>
+      </div>
+
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product3')">
+        <div style=""></div>
+      </div>
+
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product4')">
+        <div style=""> </div>
+      </div>
+
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product5')">
+        <div style=""></div>
+      </div>
+
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product6')">
+        <div style=""></div>
+      </div>
+
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product7')">
+        <div style=""></div>
+      </div>
+
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product8')">
+        <div style=""></div>
+      </div>
+  
+    </div>
+  </section>
+  <div id="dialog-overlay"></div>
+  <div id="dialog-box">
+        <button class="close1"></button>
+    <img src="assets/popup/product1.jpg" id="popupimage">
+  </div>
+</main>
+  <script type="text/javascript">
+    function GetJoke(){
+    var temp=Math.floor((Math.random() * 9) + 1);
+      PlaySpeech(jokes[temp]);
+      //alert(jokes[temp]);
+    }
+	
+  </script>
+  <style type="text/css">
+    nav {
+      height: 0px;
+    }
+    .main-content {
+      height: 1260px;
+      margin-top: 0;
+     /* padding-top: 40px;
+      background-color: #1f549b;
+      border-top: 20px solid #01d07c; */
+     box-sizing: border-box;
+     background: transparent!important;
+     padding: 0;
+    }
+    main{
+      background-image: url('assets/homebg.jpg');
+      width: 1080px;
+      height: 1920px;
+    }
+    header{
+      height: 660px;
+      width: 1080px;
+    }
+    header div.logo{
+      height: 200px;
+      padding: 0;
+    }
+    .col-sm-4.header-navbox {
+    height: 400px;
+  }
+  .navigation{
+    height: 1260px;
+    padding-top: 100px;
+    box-sizing: border-box;
+  }
+  .col-sm-6.navigation-bo {
+    margin-top: 10px;
+    height: 255px;
+}
+.col-sm-6.navigation-bo:hover{
+cursor: pointer;
+}
+#popupimage{
+  width:1080px;
+  height: 1920px;
+  }
+  #dialog-box{
+    top: 0%!important;
+  }
+.close1 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -156px;
+    z-index: 999999;
+    top: 80px;
+    background: transparent;
+    border: none;
+}
+  </style>
+
+
+</body>
+</html>

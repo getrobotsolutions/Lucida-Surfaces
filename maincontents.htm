@@ -27,59 +27,66 @@
     <div class="logo">
       <img src="" onclick="FC_ContentsCall('')">
     </div>
-     <div class="col-sm-4 header-navbox" style=""  onclick="FC_ContentsCall('Dance')">
-        <div style=""></div>
+     <div class="col-sm-4 header-navbox" style="margin-left: 75px;"  onclick="FC_ContentsCall('Dance')">
+        <div style=""><img src="assets/menu-box.png"></div>
       </div>
 
-      <div class="col-sm-4 header-navbox" style="" onclick="FC_ContentsCall('Selfie')">
-        <div style=""> </div>
+      <div class="col-sm-4 header-navbox" style="margin-left: 15px; " onclick="FC_ContentsCall('Selfie')">
+        <div style=""><img src="assets/menu-box.png"></div>
       </div>
 
-      <div class="col-sm-4 header-navbox" style="" onclick="FC_ContentsCall('Avatar')">
-        <div style=""></div>
+      <div class="col-sm-4 header-navbox" style="margin-left: 10px;" onclick="FC_ContentsCall('Avatar')">
+        <div style=""><img src="assets/menu-box.png"></div>
       </div>
   </header>
   <nav></nav>
   <section class="main-content">
     <div class="navigation">
 
-      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product1')">
-        <div style=""></div>
+      <div class="col-sm-6 navigation-bo" style="" >
+        <div style="margin-left: auto;" onclick="ShowPopupForm('product1')">
+          <img src="assets/menu-box-2.png">
+        </div>
       </div>
       
-      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product2')">
-        <div style=""></div>
+      <div class="col-sm-6 navigation-bo" style="" >
+        <div style="margin-right: auto;" onclick="ShowPopupForm('product2')"> <img src="assets/menu-box-2.png"></div>
       </div>
 
       <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product3')">
-        <div style=""></div>
+        <div style="margin-left: auto;"> 
+          <img src="assets/menu-box-2.png"></div>
       </div>
 
       <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product4')">
-        <div style=""> </div>
+        <div style="margin-right: auto;"> <img src="assets/menu-box-2.png"></div>
       </div>
 
-      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product5')">
-        <div style=""></div>
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product2')">
+        <div style="margin-left: auto;">
+          <img src="assets/menu-box-2.png"></div>
       </div>
 
-      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product6')">
-        <div style=""></div>
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product2')">
+        <div style="margin-right: auto;"> <img src="assets/menu-box-2.png"></div>
       </div>
 
-      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product7')">
-        <div style=""></div>
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product2')">
+        <div style="margin-left: auto;">
+          <img src="assets/menu-box-2.png"></div>
       </div>
 
-      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product8')">
-        <div style=""></div>
+      <div class="col-sm-6 navigation-bo" style="" onclick="ShowPopupForm('product2')">
+        <div style="margin-right: auto;">
+          <img src="assets/menu-box-2.png">
+        </div>
       </div>
   
     </div>
   </section>
   <div id="dialog-overlay"></div>
   <div id="dialog-box">
-        <button class="close1"></button>
+        <button class="close1"><img src="assets/close.png"></button>
     <img src="assets/popup/product1.jpg" id="popupimage">
   </div>
 </main>
@@ -118,19 +125,32 @@
       height: 200px;
       padding: 0;
     }
-    .col-sm-4.header-navbox {
-    height: 400px;
+    .header-navbox {
+      display: block;
+      height: 345px;
+    /* padding: 20px; */
+    width: 300px;
+    cursor: pointer;
+    
+    margin-top: 40px;
   }
   .navigation{
     height: 1260px;
     padding-top: 100px;
     box-sizing: border-box;
   }
-  .col-sm-6.navigation-bo {
+   .navigation-bo {
     margin-top: 10px;
     height: 255px;
+    width: 540px
 }
-.col-sm-6.navigation-bo:hover{
+ .navigation-bo div{
+    width: 428px;
+    height: 255px;
+    display: block;
+    
+ }
+.navigation-bo:hover{
 cursor: pointer;
 }
 #popupimage{
@@ -144,7 +164,7 @@ cursor: pointer;
     width: 70px;
     height: 70px;
     position: absolute;
-    right: -156px;
+    right: -150px;
     z-index: 999999;
     top: 80px;
     background: transparent;

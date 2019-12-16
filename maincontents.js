@@ -151,9 +151,9 @@ function ShowPopupForm(productName){
             //PlaySpeech(speak[5]);
             break;
 
-      case "product2":
+      case "TruCore":
       document.getElementById('popupimage').src = ''
-      document.getElementById('popupimage').src = 'assets/popup/product2.jpg'
+      document.getElementById('popupimage').src = 'assets/popup/TruCore.png'
             //PlaySpeech(speak[5]);
             break;
 
@@ -170,27 +170,27 @@ function ShowPopupForm(productName){
             //PlaySpeech(speak[5]);
             break;
 
-    case "product5":
+    case "GlueCore":
       document.getElementById('popupimage').src = ''
-      document.getElementById('popupimage').src = 'assets/popup/product5.jpg'
+      document.getElementById('popupimage').src = 'assets/popup/GlueCore.png'
             //PlaySpeech(speak[5]);
             break;
 
-    case "product6":
+    case "timberCore":
       document.getElementById('popupimage').src = ''
-      document.getElementById('popupimage').src = 'assets/popup/product6.jpg'
+      document.getElementById('popupimage').src = 'assets/popup/timberCore.png'
             //PlaySpeech(speak[5]);
             break;
 
-    case "product7":
+    case "BaseCore":
       document.getElementById('popupimage').src = ''
-      document.getElementById('popupimage').src = 'assets/popup/product7.jpg'
+      document.getElementById('popupimage').src = 'assets/popup/BaseCore.png'
             //PlaySpeech(speak[5]);
             break;
 
-    case "product8":
+    case "StepsRisers":
       document.getElementById('popupimage').src = ''
-      document.getElementById('popupimage').src = 'assets/popup/product8.jpg'
+      document.getElementById('popupimage').src = 'assets/popup/StepsRisers.png'
             //PlaySpeech(speak[5]);
             break;
 

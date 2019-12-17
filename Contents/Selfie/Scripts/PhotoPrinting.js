@@ -226,7 +226,7 @@ function SendEmail()
     var tempEmail=message;
     //var addr = "paul@robotaisolutions.com";
     var subject = "Your robot selfie";
-    var body = "Thank you for visiting the Apple Rock Display Open House! Here is your photo from our robot.";
+    var body = "Thank you for visiting the Lucida Surfaces booth. Attached is your photo from our robot.";
     //var mail_server = "smtp.gmail.com";
     //var mail_addr_sender = "ict.muscatairport@gmail.com";
     //var pswd = "123456789K";
@@ -261,7 +261,7 @@ function SendEmail()
         data: { 
             'fileNAME':tempfilename,
            'email':tempEmail,
-           'apID':'AppleRock'
+           'apID':'LucidaSurfaces'
         }
       }).done(function(response) {
         console.log('saved: ' + response); 

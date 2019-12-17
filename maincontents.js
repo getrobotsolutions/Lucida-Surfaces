@@ -238,24 +238,24 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
            // window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Take a picture with me");     
+            window.external.PlaySpeech("Zug mir, voos zugstee about this show?");     
     }
 
     if(btn_info[1] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Hi, I'm Tracey the robot, nice to meet you.");
+        window.external.PlaySpeech("Shoolem, rebb yeed. Yes, I’m a heimisheh robot");
         
     }
     if(btn_info[2] == '1'){
         //window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Wouldn't I be fun at your next event?");
+            window.external.PlaySpeech("What... do I look a little like your shvigger? ");
     }
     if(btn_info[3] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-       window.external.PlaySpeech("Want to see me dance?");
+       window.external.PlaySpeech(" What people would do these days to make a sale.  S’iz ma mish crazy!");
         
     }
     if(btn_info[4] == '1'){
